@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "Regional covid cases",
-      "subtitle":"rolling covid cases",
+      "text": "Covid cases in England",
+      "subtitle":"Cumulative covid cases by region",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -50,7 +50,7 @@
       "color": {
         "field": "areaName",
         "type": "nominal",
-        "scale": {"scheme": "set1"},
+        "scale": {"scheme": "dark2"},
         "title": null,
         "legend": {
           "orient": "top-left", 
