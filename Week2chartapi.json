@@ -50,7 +50,7 @@
       "color": {
         "field": "areaName",
         "type": "nominal",
-        "scale": {"scheme": "set1"},
+        "scale": {"scheme": "dark2"},
         "title": null,
         "legend": {
           "orient": "top-left", 
