@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "Covid hospitalisations in the UK",
+      "text": "UK Covid hospitalisations outside England",
       "subtitle":"Occupied ventilation beds by country",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["England", "Scotland", "Wales"]}
+          "oneOf": ["Northern Ireland", "Scotland", "Wales"]}
           }
   
   
