@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["North West", "South East", "Yorkshire and The Humber"]}
+          "oneOf": ["South East", "North West", "Yorkshire and The Humber"]}
           }
   
   
@@ -41,7 +41,7 @@
       },
   
       "y": {
-        "field": "newCasesBySpecimenDateRollingSum",
+        "field": "cumCasesBySpecimenDateRate",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
