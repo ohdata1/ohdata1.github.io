@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "Covid cases in England",
-      "subtitle":"Cumulative covid cases by region",
+      "text": "Covid hospitalisations in the UK",
+      "subtitle":"Occupied ventilation beds by country",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -11,7 +11,7 @@
     },
     
      "data": {
-      "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/Covid%20cases.csv",
+      "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/Covid%20hospitalisations.csv",
       "format": {"type": "csv"}
     },
   
@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["South East", "North West", "Yorkshire and The Humber"]}
+          "oneOf": ["England", "Scotland", "Wales"]}
           }
   
   
@@ -41,7 +41,7 @@
       },
   
       "y": {
-        "field": "cumCasesBySpecimenDateRate",
+        "field": "covidOccupiedMVBeds",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
