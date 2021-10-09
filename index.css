@@ -15,14 +15,16 @@ body{
 h1{
 
     color: #DCDCDC;
-    font-family: "Lucida Console", "Courier New", monospace ;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
 }
 
 
 
 h3, p{
     color:#DCDCDC;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Optima', sans-serif;
+  
 }
 
 .chart{
