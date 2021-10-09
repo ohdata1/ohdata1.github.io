@@ -14,14 +14,14 @@ body{
 
 h1{
 
-    color: rgb(219, 188, 188);
+    color: #DCDCDC;
     font-family: "Lucida Console", "Courier New", monospace ;
 }
 
 
 
 h3, p{
-    color:rgb(17, 17, 17);
+    color:#DCDCDC;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -36,8 +36,9 @@ h3, p{
 
 .button {
   background-color: transparent;
-  border: 1px solid #383232;
-  color: #383232;
+  border: 1px solid #DCDCDC;
+  color: #DCDCDC;
+  font-family: 'Roboto', sans-serif;
   border-radius: 150px;
   padding: 15px 32px;
   text-align: center;
