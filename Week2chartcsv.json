@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "UK Covid hospitalisations outside England",
-      "subtitle":"Occupied ventilation beds by country",
+      "text": "Vaccination rate",
+      "subtitle":"Cumulative vaccination rate by region",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -11,7 +11,7 @@
     },
     
      "data": {
-      "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/Covid%20hospitalisations.csv",
+      "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/Covid%20vaccine%20data.csv",
       "format": {"type": "csv"}
     },
   
@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Northern Ireland", "Scotland", "Wales"]}
+          "oneOf": ["North West", "Yorkshire and The Humber", "South East"]}
           }
   
   
