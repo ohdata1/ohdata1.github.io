@@ -37,6 +37,7 @@
       "x": {
         "field": "date",
         "type": "temporal",
+         "timeUnit": "month",
         "title": null,
         "axis": {"grid": false}
       },
