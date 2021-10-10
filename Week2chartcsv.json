@@ -19,8 +19,9 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["North West", "Yorkshire and The Humber", "South East"]
+          "oneOf": ["North West", "Yorkshire and The Humber", "South East"]}
         }
+       
   
   
       ],
