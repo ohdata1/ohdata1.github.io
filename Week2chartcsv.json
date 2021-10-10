@@ -42,7 +42,7 @@
       },
   
       "y": {
-        "field": "newPeopleVaccinatedCompleteByVaccinationDate",
+        "field": "cumVaccinationCompleteCoverageByVaccinationDatePercentage",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
