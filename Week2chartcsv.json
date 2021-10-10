@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["North West", "Yorkshire and The Humber", "East Midlands"]}
+          "oneOf": ["North West", "Yorkshire and The Humber", "South East"]}
         }
        
   
@@ -37,7 +37,7 @@
       "x": {
         "field": "date",
         "type": "temporal",
-         "timeUnit": "month",
+        "timeUnit": "month",
         "title": null,
         "axis": {"grid": false}
       },
