@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
 "title": {
-    "text": "UK productivity, 1971-2021",
+    "text": "UK productivity, 1974-1982",
     "subtitle":"Labour productivity. Output per hour worked, 2018==100. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
