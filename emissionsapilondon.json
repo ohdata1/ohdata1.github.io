@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "TITLE HERE",
-    "subtitle": "Sub-title here",
+    "text": "Pollutant emissions in London",
+    "subtitle": "Daily average carbon monoxide levels in london",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
