@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  
+         "title": {
+      "text": "US job openings",
+      "subtitle":"Non-farm job openings in thousands (FRED)",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": {
+      "url": "https://api.stlouisfed.org/fred/series/observations?series_id=JTSJOL&api_key=0c71fd8c083f6989edcca64696b9d5ab&file_type=json",
+      "format": {
+          "type": "json", 
+          "property": "observations"}
+    },
+    
+    "height": 300,
+    "width": 300,
+    
+    "mark": {
+      "type": "line",
+      "point": false,
+      "color": "#006633"
+    },
+    
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 10,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      }
+    }
+  }
