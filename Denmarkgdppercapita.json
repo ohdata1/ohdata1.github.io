@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Denmark per capita income over time",
-    "subtitle": "GDP per capita (USD) constant 2010 prices",
+    "subtitle": "GDP per capita (USD) constant 2010 prices. Source: Eurostat",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
