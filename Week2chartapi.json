@@ -3,7 +3,7 @@
     
     "title": {
       "text": "Vaccination rate",
-      "subtitle":"Cumulative vaccination rate by region",
+      "subtitle":"Cumulative vaccination rate by region Source: GOV.UK",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
