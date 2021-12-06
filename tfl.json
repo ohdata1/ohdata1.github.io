@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Crowding on London tube",
+    "subtitle": "Average crowding on Monday at Euston Station. Source: TFL api",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tfl.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": 310,
+  "mark": {"type": "area", "color": "#330066"},
+  "encoding": {
+    "x": {
+      "field": "time",
+      "title": null,
+      "axis": {"grid": false, "labelOverlap": "parity"}
+    },
+    "y": {
+      "field": "percentageOfBaseLine",
+      "type": "quantitative",
+      "title": "Percentage of baseline",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
