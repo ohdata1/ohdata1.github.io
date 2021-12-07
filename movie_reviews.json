@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Does popularity lead to good reviews",
+    "subtitle": "Source: The Movie Database API",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/movie_data.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": 310,
+  "mark": {"type": "point", "color": "#660000"},
+  "encoding": {
+    "x": {
+      "field": "popularity",
+      "type": "quantitative",
+      "title": "Popularity",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "vote_average",
+      "type": "quantitative",
+      "title": "Review rating",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
