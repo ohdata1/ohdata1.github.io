@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Per capita emissions over time",
+    "subtitle": "Source: World Bank Date",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/gcap1.csv"
+  },
+  "width": 310,
+  "height": 300,
+  "encoding": {"x": {"field": "date", "type": "temporal", "title": "null"}},
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "country", "type": "nominal", "title": ""},
+        "y": {
+          "field": "CO2",
+          "type": "quantitative",
+          "title": "CO2 emissions (metric tonnes per capita)"
+        }
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [{"pivot": "country", "value": "CO2", "groupby": ["date"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Brazil", "type": "quantitative"},
+          {"field": "China", "type": "quantitative"},
+          {"field": "Japan", "type": "quantitative"},
+          {"field": "United Kingdom", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
