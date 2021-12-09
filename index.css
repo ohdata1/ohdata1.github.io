@@ -52,8 +52,6 @@ h3, p{
 
 img {
     display: block;
-    max-width: 310px;
-    max-height: 300px;
-    width: auto;
-    height: auto;
+  width: 310px;
+    height: 300px;
 }
