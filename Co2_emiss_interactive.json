@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.json",
   "title": {
     "text": "Per capita emissions over time",
     "subtitle": "Source: World Bank Date",
