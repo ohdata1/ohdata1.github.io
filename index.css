@@ -5,9 +5,8 @@
 /* This is my first proper css file */
 
 body{
-    text-align: center;
     background-color: #778899;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -29,7 +28,7 @@ h3, p{
 
 .chart{
     background-color: white;
-    width:400px;
+    width:450px;
     border-width: 10px;
     border-style: solid;
     border-radius: 10px;
