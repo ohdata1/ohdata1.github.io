@@ -18,6 +18,10 @@
     {
       "encoding": {
         "color": {"field": "country", "type": "nominal", "title": ""},
+       "x":{
+          "field":"date",
+          "type": "temporal",
+          "title":null},
         "y": {
           "field": "CO2",
           "type": "quantitative",
