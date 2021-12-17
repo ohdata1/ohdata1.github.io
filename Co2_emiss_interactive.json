@@ -11,7 +11,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/gcap1.csv"
   },
-  "width": 300,
+  "width": 280,
   "height": 300,
   "encoding": {"x": {"field": "date", "type": "temporal", "title": "null"}},
   "layer": [
