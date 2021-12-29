@@ -1,22 +1,16 @@
 ﻿country,sector,value
-Norway,General public services,7.88
-Norway,Public debt transactions,2.06
-Norway,Defence,3.16
-Norway,Public order and safety,2.16
-Norway,Economic affairs,10.76
-Norway,Environmental protection,1.8
-Norway,Housing and community amenities,1.42
+Norway,General public services and debt,9.94
+Norway,Defence and Public order,5.32
+Norway,Transport and Industry,10.76
+Norway,Environmental and housing,3.22
 Norway,Health,16.54
 Norway,"Recreation, culture and religion",3.42
 Norway,Education,11.2
 Norway,Social protection,39.58
-Hungary,General public services,10.6
-Hungary,Public debt transactions,8.42
-Hungary,Defence,1.48
-Hungary,Public order and safety,3.88
-Hungary,Economic affairs,16
-Hungary,Environmental protection,1.86
-Hungary,Housing and community amenities,1.72
+Hungary,General public services and debt,19.02
+Hungary,Defence and Public order,5.36
+Hungary,Transport and Industry,16
+Hungary,Environmental and housing,3.58
 Hungary,Health,10.1
 Hungary,"Recreation, culture and religion",3.86
 Hungary,Education,9.98
