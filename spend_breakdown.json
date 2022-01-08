@@ -9,8 +9,16 @@
     "align": "left",
     "anchor": "start"
   },
-  "height": 400,
-  "width": {"step": 90},
+      "height": 500,
+  "background": "#DFDEDE",
+
+    "mark": {
+        "type": "bar",
+        "size": 180
+    },
+    "width": {
+        "step": 200
+    },
   "background": "#DFDEDE",
   "params": [
     {
@@ -19,7 +27,6 @@
       "bind": "legend"
     }
   ],
-  "mark": {"type": "bar", "size": 80},
   "encoding": {
     "y": {
       "aggregate": "sum",
