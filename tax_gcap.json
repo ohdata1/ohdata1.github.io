@@ -13,7 +13,7 @@
     "format": {"type": "csv"}
   },
   "height": 350,
-  "width": 420,
+  "width": 400,
   "background": "#DFDEDE",
   "mark": {"type": "point"},
   "encoding": {
