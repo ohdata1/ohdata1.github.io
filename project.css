@@ -1,0 +1,59 @@
+body{
+    background-color: #7A7A7A;
+    max-width: 450px;
+    margin: auto;
+}
+
+
+h1{
+
+    color: #DCDCDC;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+
+
+h3, p{
+    color:#DCDCDC;
+    font-family: 'Optima', sans-serif;
+  
+}
+
+.chart{
+    background-color: white;
+    width:450px;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #606060;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #DCDCDC;
+  color: #DCDCDC;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 150px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    
+}
+
+.button:hover{
+background: #626262;
+letter-spacing: 1px;
+box-shadow: 5px 40px -10px #000000;
+}
+
+.myimages {
+    width: 400px;
+    height: 300px;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #606060;
+}
