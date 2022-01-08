@@ -12,8 +12,8 @@
     "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_gcap.csv",
     "format": {"type": "csv"}
   },
-  "height": 300,
-  "width": 380,
+  "height": 350,
+  "width": 420,
   "background": "#DFDEDE",
   "mark": {"type": "point"},
   "encoding": {
