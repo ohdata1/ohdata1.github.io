@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.json",
+  "title": {
+    "text": "How does size of government affect trust in that government",
+    "subtitle": "Sources: FRED, Pew Reserch Centre",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_trust.csv"
+  },
+  "width": 400,
+  "height": 400,
+  "background": "#DFDEDE",
+  "config": {"axis": {"gridColor": "#F0F0F0"}},
+  "encoding": {"x": {"field": "date", "type": "temporal", "title": "null"}},
+  "transform": [
+    {"filter": "datum.tax>0"},
+    {"filter": "datum.trust>0"},
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1955,
+      "bind": {
+        "input": "range",
+        "min": 1955,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1955,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeDash": [8, 3]},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {"grid": true},
+          "title": null
+        },
+        "y": {
+          "field": "tax",
+          "type": "quantitative",
+          "scale": {"domain": [0, 100]},
+          "axis": {"grid": true},
+          "title": null
+        },
+        "color": {
+          "datum": "Top rate of income tax (%)",
+          "scale": {"range": ["#00468B", "#F52626"]}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#990404"},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "title": null},
+        "y": {
+          "field": "trust",
+          "type": "quantitative",
+          "scale": {"domain": [0, 100]},
+          "title": "Trust in government"
+        },
+        "color": {"datum": "Trust in government"}
+      }
+    }
+  ]
+}

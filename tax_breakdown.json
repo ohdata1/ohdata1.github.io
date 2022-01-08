@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_breakdown.csv"
+  },
+  "title": {
+    "text": "From where do different governments recieve tax revenues?",
+    "subtitle": "Breakdown of taxation by source in 2019. Source: OECD",
+    "align": "left",
+    "anchor": "start"
+  },
+  "height": 400,
+  "width": {"step": 90},
+  "background": "#DFDEDE",
+  "mark": {"type": "bar", "size": 80},
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "value",
+      "stack": "normalize",
+      "title": null,
+      "axis": {"format": "%", "domain": false}
+    },
+    "x": {"field": "country", "title": null, "axis": {"labelAngle": 0}},
+    "color": {"field": "type", "title": null, "scale": {"scheme": "dark2"}}
+  },
+  "config": {"legend": {"orient": "right"}},
+  "view": {"stroke": null},
+  "tooltip": [
+    {"field": "country", "type": "nominal", "title": "country"},
+    {
+      "field": "value",
+      "aggregate": "sum",
+      "type": "quantitative",
+      "title": "proportion"
+    }
+  ]
+}

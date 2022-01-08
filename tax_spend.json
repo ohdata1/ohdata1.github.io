@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "How tax revenue affects government spending",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_spend.csv"
+  },
+  "width": 400,
+  "height": 400,
+  "background": "#DFDEDE",
+  "config": {"axis": {"gridColor": "#F0F0F0"}},
+  "transform": [{"filter": "datum.year==Year"}],
+  "params": [
+    {
+      "name": "Year",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 1994,
+        "max": 2019,
+        "step": 5,
+        "name": "Year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "circle", "size": 80},
+      "encoding": {
+        "x": {
+          "field": "tax",
+          "type": "quantitative",
+          "axis": {"tickCount": 5, "title": "Tax revenue as % of GDP"}
+        },
+        "y": {
+          "field": "spend",
+          "type": "quantitative",
+          "axis": {"tickCount": 5, "title": "Gov. spending as % of GDP"}
+        },
+        "color": {
+          "field": "continent",
+          "title": "Continent",
+          "scale": {"scheme": "dark2"}
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {
+            "field": "tax",
+            "type": "quantitative",
+            "title": "Taxes as a % of GDP"
+          },
+          {
+            "field": "spend",
+            "type": "quantitative",
+            "title": "Spending as a % of GDP"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick"},
+      "transform": [{"regression": "tax", "on": "spend"}],
+      "encoding": {
+        "x": {"field": "tax", "type": "quantitative"},
+        "y": {"field": "spend", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"regression": "tax", "on": "spend", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/spend_breakdown.csv"
+  },
+  "title": {
+    "text": "How do governments spend their money",
+    "subtitle": "Breakdown of government spending by sector in 2019. Source: Eurostat",
+    "align": "left",
+    "anchor": "start"
+  },
+  "height": 400,
+  "width": {"step": 90},
+  "background": "#DFDEDE",
+  "params": [
+    {
+      "name": "cont",
+      "select": {"type": "point", "fields": ["sector"]},
+      "bind": "legend"
+    }
+  ],
+  "mark": {"type": "bar", "size": 80},
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "value",
+      "stack": "normalize",
+      "title": null,
+      "axis": {"format": "%", "domain": false}
+    },
+    "x": {"field": "country", "title": null, "axis": {"labelAngle": 0}},
+    "color": {
+      "field": "sector",
+      "title": null,
+      "scale": {
+        "range": [
+          "#3B1C8C",
+          "#21908D",
+          "#5AC865",
+          "#F9E721",
+          "#CCCC00",
+          "#990000",
+          "#FF8000",
+          "#009999"
+        ],
+        "domain": [
+          "General public services and debt",
+          "Defence and Public order",
+          "Transport and Industry",
+          "Environment and housing",
+          "Health",
+          "Recreation, culture and religion",
+          "Education",
+          "Social protection"
+        ]
+      }
+    }
+  },
+  "config": {"legend": {"orient": "right"}},
+  "view": {"stroke": null},
+  "opacity": {"condition": {"param": "cont", "value": 1}, "value": 0.2}
+}
