@@ -6,7 +6,7 @@
 
 <head>
   
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="project.css">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -18,38 +18,59 @@
 
 <body>
 
-    <h1>Data Science 2021.</h1>
+  <div class="wrap">
+    <!-- <a class="rubric-launch" href="index">Portfolio</a> -->
+    <a class="button" href="project">Project here</a>
+    </div>
+  
+       <div class="grid_items">
+  
+    <h1>Are Taxes Bad?.</h1>
 
-    <h3>Covid-19</h3>
+    <h3>How do different levels of taxation affect an economy</h3>
 
     <p>The first chart tracks Covid-19 cases by UK region.</p>
 
-<!--Vaga embed, with notes for what is going on-->
-<div class="chart" id="firstChart">
+<!--Chart 1 -->
+  <div class="chart" id="chart1">
+      <script>
+        var myChart1 = "tax_gcap.json";
+        vegaEmbed('#chart1', myChart1);
+      </script>
+  </div>
+  
+ <!--Chart 2 -->
+  <div class="chart" id="chart2">
+      <script>
+        var myChart2 = "innov_tax.json";
+        vegaEmbed('#chart2', myChart2);
+      </script>
+  </div>      
+   
+  <!--Chart 3 -->
+  <div class="chart" id="chart3">
+      <script>
+        var myChart3 = "tax_breakdown.json";
+        vegaEmbed('#chart3', myChart3);
+      </script>
+  </div>       
 
-  <script>
-    // Following the script tag we are using Javascript.
-    // One way to tell is to see how comments work...
-    // First job is to set the chart as a JS variable:
-    var myChart1 = "chartCovid1.json";
-    // Now we simply insert it, using Vega's embed code:
-    // The embed function needs to be told the location, and what to put there. 
-    vegaEmbed('#firstChart', myChart1);
-  </script>
-
-</div>
-
-  <h3>Productivity puzzle</h3>
-
-  <p>My second chart looks at productivity in the UK</p>
-
-<div class="chart" id="secondChart">
-  <script>
-    var myChart1 = "chartLine1.json";
-    vegaEmbed('#secondChart', myChart1);
-  </script>
-</div>
-    
+<!--Chart 4 -->
+  <div class="chart" id="chart4">
+      <script>
+        var myChart4 = "spend_breakdown.json";
+        vegaEmbed('#chart4', myChart4);
+      </script>
+  </div>
+         
+<!--Chart 5 -->
+  <div class="chart" id="chart5">
+      <script>
+        var myChart5 = "tax_spend.json";
+        vegaEmbed('#chart5', myChart5);
+      </script>
+  </div>
+         
 </body>
 
 
