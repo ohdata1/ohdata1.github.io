@@ -14,7 +14,9 @@
   "width": 400,
   "height": 400,
   "background": "#DFDEDE",
-  "config": {"axis": {"gridColor": "#F0F0F0"}},
+  "config": {"axis": {"gridColor": "#F0F0F0"},
+       "legend": {"orient": "top-right"}},
+  
   "encoding": {"x": {"field": "date", "type": "temporal", "title": "null"}},
   "transform": [
     {"filter": "datum.tax>0"},
