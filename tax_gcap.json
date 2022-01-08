@@ -12,8 +12,8 @@
     "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_gcap.csv",
     "format": {"type": "csv"}
   },
-  "height": 400,
-  "width": 400,
+  "height": 300,
+  "width": 450,
   "background": "#DFDEDE",
   "mark": {"type": "point"},
   "encoding": {
@@ -41,7 +41,7 @@
       {
         "field": "total",
         "type": "quantitative",
-        "title": "Taxes as a % of GDP"
+        "title": "% direct taxes"
       },
       {
         "field": "perc_dir",
