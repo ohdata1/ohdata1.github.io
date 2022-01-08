@@ -33,7 +33,7 @@
       "field": "perc_dir",
       "scale": {"scheme": "yelloworangered"},
       "type": "quantitative",
-      "title": "Direct taxes as % of taxes"
+      "title": "% Direct taxes"
     },
     "tooltip": [
       {"field": "country", "type": "nominal", "title": "Country"},
