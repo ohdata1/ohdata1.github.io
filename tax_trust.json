@@ -12,7 +12,7 @@
     "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_trust.csv"
   },
   "width": 400,
-  "height": 400,
+  "height": 500,
   "background": "#DFDEDE",
   "config": {"axis": {"gridColor": "#F0F0F0"},
        "legend": {"orient": "top-right"}},
