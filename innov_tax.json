@@ -14,6 +14,7 @@
   },
   "height": 400,
   "width": 400,
+   "background": "#DFDEDE",
   "layer": [
     {
       "params": [
