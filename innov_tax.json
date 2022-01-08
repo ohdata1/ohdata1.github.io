@@ -12,8 +12,8 @@
     "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/inov_gcap.csv",
     "format": {"type": "csv"}
   },
-  "height": 400,
-  "width": 400,
+  "height": 350,
+  "width": 420,
    "background": "#DFDEDE",
   "layer": [
     {
