@@ -29,7 +29,9 @@
 
     <h3>How do different levels of taxation affect an economy</h3>
 
-    <p>The first chart tracks Covid-19 cases by UK region.</p>
+    <p>Traditionally economists predict that higher taxation would harm the long-term growth of an economy as they limit savings rates, taking away from potential private sector investment, as seen in Solow (1956). This project attempts to test whether this relationship can be seen in real-world data and why this may be the case for certain countries as opposed to others. There is also a discussion of the other potential benefits of taxation and whether these translate to the data.</p>
+         
+       
 
 <!--Chart 1 -->
   <div class="chart" id="chart1">
@@ -39,14 +41,21 @@
       </script>
   </div>
   
+   <p> Shows a positive correlation between tax rate and incomes which goes against traditional economic theory. Countries with a higher proportion of direct taxes tend to have both higher overall tax rates and higher GDP per capita, providing a potential mechanism for this correlation; income taxes may be more effective than consumption taxes. This relationship, however, is unlikely to be causal since there may be omitted variables that affect both tax rate and incomes. </p>     
+         
  <!--Chart 2 -->
   <div class="chart" id="chart2">
       <script>
         var myChart2 = "innov_tax.json";
         vegaEmbed('#chart2', myChart2);
       </script>
-  </div>      
+  </div>    
+         <div class="wrap">
+    <p align="center">
+    <a class="button" href="inov_cap.ipynb">Colab</a>
+    </div>
    
+   <p> Limiting investment is the predicted mechanism by which this growth is stunted; it would be expected that innovation would be lower in countries with higher tax rates. This is not seen in the data; countries with higher tax rates tend to have higher innovation scores, with a relatively strong R2 value and not the predicted negative relationship. There are not simply structural differences between continents because the relationship is also seen within continents. The regression was formed in vega with a layered chart. </p>      
   <!--Chart 3 -->
   <div class="chart" id="chart3">
       <script>
@@ -54,6 +63,7 @@
         vegaEmbed('#chart3', myChart3);
       </script>
   </div>       
+   <p> These two graphs focus on two countries, Hungary and Norway, with similar populations and tax rates but with Norway having a significantly larger per capita income. Norway has a greater focus on income taxes, corporate and personal income, which are more likely to be progressive and tax a higher proportion of wealthier incomes. However, Hungary receives almost no revenue from corporations, with a much larger focus on regressive consumption tax. To create a stacked bar chart from data that is proportions of the whole, the data was made cumulative using the transform command </p>      
 
 <!--Chart 4 -->
   <div class="chart" id="chart4">
@@ -70,22 +80,35 @@
         vegaEmbed('#chart5', myChart5);
       </script>
   </div>
-         
+         <p> As expected, there is a strong positive relationship between tax revenue and government spending. This holds over time, with an R2 always above 0.5 </p>
   <!--Chart 6 -->
         <img src="spend_health.png" class="myimages" alt="" width = "600px" height = "400px"> 
          
-                 
+                 <div class="wrap">
+    <p align="center">
+    <a class="button" href="spend_health.ipynb">Colab</a>
+    </div>
+         
+         <p> This is a regression performed in python; a quadratic regression best fit the distribution of data because it is a generally positive relationship that sees lower marginal benefits of spending on health outcomes at higher levels of government spending. </p>
   <!--Chart 7 -->
         <img src="tax_ineq.png" class="myimages" alt="" width = "600px" height = "400px"> 
          
+         <p> This shows a significant level of clustering of the level of inequality and tax rate, with Southern Europe having higher levels of inequality and lower taxes than the North. This higher inequality is seen partially separate to the level of tax, suggesting a potential cultural impact on outcomes arising from taxation; this may be because of cultural tendencies for progressive or regressive taxation or because of companies and individuals reacting differently to different levels of taxation. There appear to be different reactions to taxation in different regions. </p>
+         
 <!--Chart 8 -->
-  <div class="chart" id="chart6">
+  <div class="chart" id="chart8">
       <script>
-        var myChart6 = "tax_trust.json";
-        vegaEmbed('#chart6', myChart6);
+        var myChart8 = "tax_trust.json";
+        vegaEmbed('#chart8', myChart8);
       </script>
   </div>
          
+             <div class="wrap">
+    <p align="center">
+    <a class="button" href="tax_trust1.ipynb">Colab</a>
+    </div>
+         
+         <p> There is some evidence for the highest tax rates correlating with confidence in government; if a government is less involved in people’s lives there is lower trust towards that government. The data for trust was scraped from the Pew website and the tax data is from the FRED API on python. This means that this graph can be updated by re-running the python code and uploading the CSV to GitHub. </p>
          
 </body>
 
