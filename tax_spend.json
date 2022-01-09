@@ -4,7 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_spend.csv"
   },
-  "width": 400,
+  "width": 395,
   "height": 400,
   "background": "#DFDEDE",
   "config": {"axis": {"gridColor": "#F0F0F0"}},
