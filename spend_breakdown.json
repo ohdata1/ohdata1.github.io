@@ -14,10 +14,10 @@
 
     "mark": {
         "type": "bar",
-        "size": 165
+        "size": 155
     },
     "width": {
-        "step": 170
+        "step": 160
     },
   "background": "#DFDEDE",
   "params": [
