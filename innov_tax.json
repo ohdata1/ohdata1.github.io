@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "How do tax rates effect innovation?",
-    "subtitle": "Regression of innovation score on tax rate in 2015 with intercative legend Sources: WIPO, ICTD",
+    "subtitle": "Regression of innovation score on tax rate in 2015 with interactive legend. Sources: WIPO, ICTD",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
