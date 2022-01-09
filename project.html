@@ -110,7 +110,14 @@
          
          <p> There is some evidence for the highest tax rates correlating with confidence in government; if a government is less involved in people’s lives there is lower trust towards that government. The data for trust was scraped from the Pew website and the tax data is from the FRED API on python. This means that this graph can be updated by re-running the python code and uploading the CSV to GitHub. </p>
          
+         <h3> Data </h3>
+         <p> The majority of the data was downloaded as a CSV from the data sources and then cleaned in python and graphs comparing two variables were merged in python, using pd.merge. There was a potential issue of merging using country names because different data sources use different spellings of the same country; I, therefore, used merged using 3-letter iso country codes within the data, which is the same across data sources. The data for continents was scraped using pandas on python from the Statistics times website. Cross-sectional correlation graphs used all the possible countries with data available for the chosen graph. All data from the OECD was in wide form so had to be rotated into long-form in python using the melt function. </p>
+        
+         <h3> Conclusions </h3>
+         <p> Overall, there appears to be a general positive effect of taxation on the outcomes for a country, however, there is a large degree of variance within this, with evidence that both what the taxes are used to fund and where the tax revenue arises from are key to achieving positive results. A greater focus on more progressive direct taxation appears to have greater positive outcomes. Further study could focus on this more to find mechanisms behind this. </p>
+         
 </body>
+ 
 
 
 </html>
