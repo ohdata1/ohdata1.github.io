@@ -16,7 +16,7 @@
 
     "data": {
       "name": "mydata",
-      "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/Gov_spend.csv",
+      "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/dataproject/Gov_spend.csv",
        "format": {"type": "csv"}
     },
 
