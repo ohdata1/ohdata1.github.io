@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "How tax revenue affects government spending",
   "data": {
-    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/tax_spend.csv"
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/dataproject/tax_spend.csv"
   },
   "width": 390,
   "height": 400,
