@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/inov_gcap.csv",
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/dataproject/inov_gcap.csv",
     "format": {"type": "csv"}
   },
   "height": 355,
