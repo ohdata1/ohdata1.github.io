@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/data_Emissions-US.json",
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/dataproject/data_Emissions-US.json",
     "format": {"type": "json"}
   },
   "height": 300,
