@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/coefuefa.csv",
+    "url": "https://raw.githubusercontent.com/ohdata1/ohdata1.github.io/main/dataproject/coefuefa.csv",
     "format": {"type": "csv"}
   },
   "height": 300,
